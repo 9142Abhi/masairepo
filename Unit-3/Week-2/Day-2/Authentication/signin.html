@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #nav {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 10px;
+        margin-top: 30px;
+        text-align: center;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+      }
+      form {
+        width: 70%;
+        margin: auto;
+      }
+      form > input {
+        width: 50%;
+        margin-left: 25%;
+        margin-bottom: 10px;
+        padding: 10px;
+        display: block;
+        border-radius: 10px;
+        border: 1px solid teal;
+      }
+      #submit {
+        width: 40%;
+        margin-left: 31%;
+        background-color: orange;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        border: none;
+      }
+      #submit:hover {
+        background-color: teal;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      h1 {
+        padding: 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Create Singin and signup pages and use local storage to store usernames and passwords in the Movies App. -->
+    <div id="nav">
+      <a href="signin.html"><h1>Signin</h1></a>
+      <a href="signup.html"><h1>Signup</h1></a>
+    </div>
+    <form action="" onsubmit="myfun(event)">
+      <input type="text" id="name" placeholder="Create user name" />
+      <input type="password" id="password" placeholder="Create password" />
+      <input type="submit" id="submit" />
+    </form>
+  </body>
+</html>
+<script src="signin.js"></script>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      form {
+        width: 70%;
+        margin: auto;
+      }
+      form > input {
+        width: 50%;
+        margin-left: 25%;
+        margin-bottom: 10px;
+        padding: 10px;
+        display: block;
+        border-radius: 10px;
+        border: 1px solid teal;
+      }
+      #submit {
+        width: 40%;
+        margin-left: 31%;
+        background-color: orange;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        border: none;
+      }
+      #submit:hover {
+        background-color: teal;
+      }
+      h1 {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 10px;
+        margin-top: 30px;
+        text-align: center;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+      }
+      button {
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        margin-left: 44%;
+        margin-top: 10px;
+        color: red;
+      }
+      button:hover {
+        background-color: aquamarine;
+        color: black;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Signup Page</h1>
+    </div>
+    <form action="" id="form" onsubmit="clicksignup(event)">
+      <input type="text" id="name" placeholder="Enter username" />
+      <input type="password" id="password" placeholder="Enter password" />
+      <input type="submit" id="submit" />
+    </form>
+    <a href="signin.html"> <button>create new account</button></a>
+  </body>
+</html>
+<script src="signup.js"></script>

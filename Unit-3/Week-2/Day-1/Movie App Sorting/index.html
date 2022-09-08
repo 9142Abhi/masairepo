@@ -29,6 +29,9 @@
       margin-bottom: 10px;
       margin-top: 5px;
     }
+    a {
+      text-decoration: none;
+    }
     #add {
       padding: 10px;
       border-radius: 5px;
@@ -37,15 +40,29 @@
       font-weight: bold;
       margin-left: 47%;
       margin-bottom: 20px;
+      color: red;
     }
     #add:hover {
       cursor: pointer;
       background-color: orange;
       color: white;
     }
+    button {
+      display: block;
+      margin-left: 15%;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      background-color: teal;
+      cursor: pointer;
+      color: white;
+    }
   </style>
   <body>
     <a href="database.html"><button id="add">Add Movies</button></a>
+    <button id="sort-lh" onclick="sortingleft()">Low to High</button>
+    <button id="sort-hl" onclick="sortingright()">High to Low</button>
     <div id="container"></div>
   </body>
 </html>

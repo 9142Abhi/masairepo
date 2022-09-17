@@ -7,7 +7,7 @@ function setJokes(data) {
   let p = document.createElement("p");
   p.className = "joke-text";
 
-  p.innerHTML = data.joke;
+  p.innerHTML = data.value;
 
   div.append(p);
   container.append(div);
@@ -19,16 +19,16 @@ let getRandomJoke = async () => {
   // fetch request to get a random joke
 
   try {
-    let res = await fetch(`https://v2.jokeapi.dev/joke/Any`);
+    let res = await fetch(`https://api.chucknorris.io/jokes/random`);
     let data = await res.json();
     // console.log(data);
     // return the data ona successfull request
-    // console.log(data.joke);
+    console.log(data);
     setJokes(data);
     // return data;
   } catch (err) {
     // return error text on failure
-    console.log(err);
+    console.log("something went wrong");
   }
 };
 let getJokeByCategory = async (event) => {
@@ -36,13 +36,13 @@ let getJokeByCategory = async (event) => {
 
   try {
     let res = await fetch(
-      `https://v2.jokeapi.dev/joke/Any?blacklistFlags=${event}`
+      `https://api.chucknorris.io/jokes/random?category${event}`
     );
     let result = await res.json();
     setJokes(result);
     // return result;
   } catch (err) {
-    console.log("err", err);
+    console.log("something went wrong");
   }
   // return the data ona successfull request
   // return error text on failure

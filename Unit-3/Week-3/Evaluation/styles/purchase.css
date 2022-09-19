@@ -1,0 +1,48 @@
+a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid orange;
+    background-color: aqua;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+}
+#navbar{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+#purchased_vouchers{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    gap:30px;
+}
+#purchased_vouchers>div{
+    width: 100%;
+    border: 1px solid orange;
+}
+#purchased_vouchers>div>p{
+    margin-top: 0px;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+#purchased_vouchers>div>button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+#purchased_vouchers>div>img{
+    height:300px;
+}
+h3{
+    font-size: 20px;
+}

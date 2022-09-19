@@ -1,0 +1,42 @@
+a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid orange;
+    background-color: aqua;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+}
+#navbar{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#voucher_list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+.voucher{
+    width: 100%;
+    border: 1px solid orange;
+}
+.voucher>p{
+    margin-top: 0px;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+.voucher>button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.voucher>img{
+    height:300px;
+}

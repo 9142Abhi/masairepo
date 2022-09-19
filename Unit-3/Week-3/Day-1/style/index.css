@@ -1,0 +1,108 @@
+#nav{
+    width: 90%;
+    margin: auto;
+    height: 6vh;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+}
+#nav>div{
+    display: flex;
+    /* border: 1px solid; */
+    justify-content: space-between;
+    align-items: center;
+}
+#nav>div:nth-child(1){
+    width:15%;
+    
+}
+#nav>div:nth-child(2){
+    width: 40%;
+    justify-content: space-between;
+    
+    
+}
+#nav>div:nth-child(2)>input{
+    width: 84%;
+    height: 100%;
+}
+#nav>div:nth-child(2)>button{
+    border: 1px solid;
+    height: 6.8vh;
+    
+    
+}
+#nav>div:nth-child(2)>button+img{
+    width: 8%;
+    border: 1px solid black;
+    padding: 6px 0px;
+    border-radius: 50%;
+    
+}
+#nav>div:nth-child(3){
+    width: 16%;
+    
+}
+#nav>div:nth-child(3)>img{
+    width: 15%;
+    height: 50%;
+    margin-left: 5px;
+    margin-right: 10px;
+    
+}
+#nav>div:nth-child(3)>button{
+    height: 90%;
+    width: 80%;
+
+}
+#nav>div:nth-child(3)>button:hover{
+    cursor: pointer;
+}
+
+div>img{
+    width: 30%;
+    height:60%;
+}
+button>img{
+    height: 20px;
+}
+#nav>div:nth-child(1)>img+img{
+    width: 70%;
+    height: 90%;
+}
+#nav>div:nth-child(1)>img{
+    width: 18%;
+    height: 40%;
+}
+#container{
+    display: grid;
+    width: 94%;
+    
+    margin: auto;
+    grid-template-columns: repeat(5,1fr);
+    justify-content:space-between;
+    
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+    text-align: justify;
+    
+
+}
+#container>div{
+    width: 90%;
+    
+}
+#container>div>img{
+    width: 100%;
+}
+#fil{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+select{
+    padding: 8px 4px;
+    border-radius: 10px;
+    font-size: 16px;
+}

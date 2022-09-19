@@ -1,0 +1,102 @@
+#container{
+    width: 98%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 12% 35% 15%;
+    background-color: black;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#container>div{
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+
+    align-items: center;
+}
+#container>div:first-child>img:first-child{
+    width: 16%;
+    height:40%;
+}
+#container>div:first-child>img:nth-child(2){
+    width: 70%;
+    height: 100%;
+}
+#container>div:nth-child(2)>input{
+    width: 85%;
+    height: 80%;
+    border-radius: 5px;
+    padding-left: 5px;
+    border: none;
+}
+#container>div:nth-child(2)>button{
+    width: 7%;
+    height: 80%;
+    
+    border-radius: 50%;
+    
+}
+button>img{
+    width: 80%;
+    height: 60%;
+    border-radius: 50%;
+}
+#container>div:last-child>img{
+    width: 15%;
+    height: 50%;
+    border-radius: 50%;
+}
+#container>div:last-child>button{
+    width: 20%;
+    height: 80%;
+    border-radius: 50%;
+    
+}
+#bottom{
+    width: 98%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 15% 80%;
+    
+
+}
+#page{
+    width: 100%;
+    margin: auto;
+    padding-right: 20px;
+    
+}
+.main{
+    width: 100%;
+    padding: 10px;
+
+    
+
+}
+.main>div{
+    display: flex;
+    height: 16px;
+    justify-content: space-between;
+
+    
+    align-items: center;
+    margin-bottom: 18px;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+.main>div>p{
+    width: 100%;
+    
+    margin-left: 30px;
+    
+}
+.main>div>img{
+    width: 12%;
+    height: 100%;
+
+}
+
+
